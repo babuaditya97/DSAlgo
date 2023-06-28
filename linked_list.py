@@ -16,7 +16,7 @@ class Element(object):
 class LinkedList(object):
     def __init__(self, head=None):
         self.head = head
-        
+
     def append(self, new_element):
         current = self.head
         if self.head:
@@ -61,8 +61,7 @@ class LinkedList(object):
             if current_position == position - 1:
                 new_element.next = current.next
                 current.next = new_element
-        
-    
+       
     def delete(self, value):
         """Delete the first node with a given value."""
         if self.head and self.head.value == value:
